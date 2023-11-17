@@ -92,7 +92,7 @@ body{
 .home{
     display: flex;
     align-items: center;
-    background: url(../content/home.jpg) no-repeat;
+    background: url(jpg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -751,3 +751,17 @@ color: #00abf0;
 .copyText span:hover{
     color: var(--main-color);
 }
+.custom-alert {
+    padding: 10px;
+    color: white;
+    background-color: #00abf0;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+  }
