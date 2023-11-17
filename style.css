@@ -749,7 +749,7 @@ color: #00abf0;
     transition: .3s;
 }
 #copyText span:hover{
-    color: var(--main-color);
+    color: #00abf0;;
 }
 .custom-alert {
     padding: 10px;
