@@ -745,10 +745,10 @@ input[type=number]::-webkit-outer-spin-button{
 .contact-infos a:hover{
 color: #00abf0;
 }
-.copyText span{
+#copyText span{
     transition: .3s;
 }
-.copyText span:hover{
+#copyText span:hover{
     color: var(--main-color);
 }
 .custom-alert {
