@@ -121,12 +121,6 @@ body{
     animation-delay: 1s;
 }
 
-/* .home-content h3{
-    position: relative;
-    font-size: 32px;
-    font-weight: 700;
-    color: #00abf0;
-} */
 
 .headani{
     position: relative;
@@ -555,89 +549,85 @@ width: 10%;
 .progressp:nth-child(4) .bar span {
     width: 40%; 
 }
-
 .contact{
-    height: 1005px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    flex-direction: column;
 }
-.contactcenter{
-    padding: 30px;
-    font-size: 50px;
-    height: 72px;
+.contact h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--text-color);
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 10px;
 }
-
-.contactcenter  span {
-    color: #00abf0;
+.contact span{
+    color: var(--main-color);
 }
-
-.form{
-    margin: auto;
-    max-width: 800px
+.contact form{
+    width: 600px;
+    text-align: center;
 }
-.form input{
-    background: #0a2333;
-    margin-top: 25px;
-    font-size: 20px;
+form .input-box{
+    display: flex;
+    justify-content: space-between;
+}
+.field .item{
     width: 100%;
-    padding: 7px 30px ;
-    border: 3px solid var(--main-color);
-    border-radius:10px;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    outline: none;
+    border-radius: 6px;
+    font-size: 17px;
     color: #ededed;
-    transition: .5s;
+    margin: 12px;
+}
+.field .item::placeholder {
+    color: rgba(255, 255, 255, .3);
 }
 
-.form input:hover{
+.input-box .input-field{
+    width: 48.5%;
+}
+form .textarea-field .item{
+    resize: none;
+}
+form button{
+    padding: 13px 35px;
     background: var(--bg-color);
+    border: 2.5px solid var(--main-color);
+    outline: none;
+    border-radius: 6px;
+    color: var(--main-color);
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 8px;
+    font-weight: bold;
+    transition: .3s;
 }
-
+form button:hover{
+    color: var(--bg-color);
+    background: var(--main-color);
+    transform: scale(1.1);
+}
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button{
     -webkit-appearance: none;
 }
-.text{
-    margin-top: 25px;
-    color: #ededed;
-    font-size: 20px;
-    width: 100%;
-    background: #0a2333;
-    padding: 7px 30px; 
-    border: 2px solid var(--main-color);
-    border-radius:10px;
-    line-height: 1.2;
-    position: relative;
-    transition: .5s ;
+@media (max-width:765px){
+    .contact form{
+        width: 400px;
+    }
 }
-.text:hover{
-    background-color: var(--bg-color);
+@media (max-width:470px){
+    .contact form{
+        width: 300px;
+    }
 }
-.btn{
-    position: relative;
-    width: 200px;
-    padding: 10px 0px ;
-    text-align: center;
-    margin: 20px 10px ;
-    border: 2px solid var(--main-color);
-    border-radius: 10px;
-    background: transparent;
-    color: #00abf0;
-    cursor: pointer;
-    overflow: hidden;
-    display: block;
-    margin: auto;
-    margin-top:25px ;
-    font-size: 30px;
-    font-weight: bold;
-    transition: .3s ;
-}
-
-.btn:hover {
-    transform: scale(1.1);
-    color: var(--bg-color);
-    background: var(--main-color);
-    border: 2px solid var(--second-bg-color);
-} 
-
 .text-ani h3{
     display: flex;
     font-size: 30px;
@@ -749,7 +739,7 @@ color: #00abf0;
     transition: .3s;
 }
 #copyText span:hover{
-    color: #00abf0;;
+    color: var(--main-color);
 }
 .custom-alert {
     padding: 10px;
@@ -765,3 +755,4 @@ color: #00abf0;
     transform: translateX(-50%);
     z-index: 9999;
   }
+
