@@ -614,10 +614,12 @@ form button:hover{
     background: var(--main-color);
     transform: scale(1.1);
 }
+
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button{
     -webkit-appearance: none;
 }
+
 @media (max-width:765px){
     .contact form{
         width: 400px;
